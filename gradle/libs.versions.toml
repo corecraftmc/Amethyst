@@ -1,0 +1,20 @@
+[versions]
+
+# Kotlin
+kotlin = "1.8.20-RC"
+
+[libraries]
+
+# Kotlin
+kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+# Shadow
+shadow = { module = "com.github.johnrengelman:shadow", version = "8.1.0" }
+
+# Misc
+gson = { module = "com.google.code.gson:gson", version = "2.10.1" }
+yaml = { module = "me.carleslc.Simple-YAML:Simple-Yaml", version = "1.8.3" }
+
+jetbrains = { module = "org.jetbrains:annotations", version = "23.0.0" }
+
+turtle = { module = "com.lordcodes.turtle:turtle", version = "0.8.0" }
