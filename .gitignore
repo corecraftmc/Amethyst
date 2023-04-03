@@ -3,3 +3,7 @@
 
 buildSrc/.gradle
 buildSrc/build
+
+api/build
+
+server/build
