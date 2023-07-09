@@ -5,34 +5,22 @@ dependencyResolutionManagement {
 pluginManagement {
     repositories {
         gradlePluginPortal()
-
         mavenCentral()
+
+        maven("https://repo.crazycrew.us/first-party/")
+        maven("https://repo.crazycrew.us/third-party/")
     }
 }
 
 rootProject.name = "Amethyst"
 
-include("server", "api")
-
 val lowerCase = rootProject.name.lowercase()
+
+listOf("server", "api").forEach(::includeProject)
 
 fun includeProject(name: String) {
     include(name) {
         this.name = "$lowerCase-$name"
-    }
-}
-
-fun includeModule(name: String) {
-    include(name) {
-        this.name = "$lowerCase-module-$name"
-        this.projectDir = file("modules/$name")
-    }
-}
-
-fun includeType(name: String) {
-    include(name) {
-        this.name = "$lowerCase-$name"
-        this.projectDir = file("minecraft/$name")
     }
 }
 

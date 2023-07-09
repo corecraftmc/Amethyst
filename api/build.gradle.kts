@@ -1,3 +1,3 @@
 plugins {
-    id("amethyst.minestom-plugin")
+    id("minestom-plugin")
 }

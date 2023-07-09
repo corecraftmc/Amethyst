@@ -1,7 +1,7 @@
 plugins {
-    id("amethyst.root-plugin")
+    id("root-plugin")
 }
 
 dependencies {
-    implementation(project(":api"))
+    api(project(":amethyst-api"))
 }
